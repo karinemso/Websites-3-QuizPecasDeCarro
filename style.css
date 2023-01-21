@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.questions, .question {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+   
+}
+#qst2, #qst3,#qst4,#qst5 {
+    display: flex;
+}
+
+.imagem {
+    width: 320px;
+    height: 304px;
+}
