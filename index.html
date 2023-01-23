@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -12,46 +14,53 @@
     <div class="container">
         <div class="questions" id="questions">
             <div class="question" id="qst1">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_667994-MLB41372754084_042020-V.webp" alt="vela de ignição" class="imagem">
-                <h2>Qual é o nome dessa peça de carro?</h2>
+                <img src="https://http2.mlstatic.com/D_NQ_NP_667994-MLB41372754084_042020-V.webp" alt="vela de ignição"
+                    class="imagem">
+                <h2 class="questionHeader">Qual é o nome dessa peça de carro?</h2>
                 <label for=""><input type="radio" name="op" id="op1" class="op">Motor</label>
                 <label for=""><input type="radio" name="op" id="op2" class="op">Ponto de ignição</label>
                 <label for=""><input type="radio" name="op" id="op3" class="op">Alternador</label>
                 <label for=""><input type="radio" name="op" id="op4" class="op">Vela de ignição</label>
-                
-                
+
+
             </div>
             <div class="question" id="qst2">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_805446-MLB46911907865_072021-V.webp" alt="óleo" class="imagem">
-                <h2>Qual é a função do óleo em um carro?</h2>
+                <img src="https://http2.mlstatic.com/D_NQ_NP_805446-MLB46911907865_072021-V.webp" alt="óleo"
+                    class="imagem">
+                <h2 class="questionHeader">Qual é a função do óleo em um carro?</h2>
                 <label for=""><input type="radio" name="op" id="op5" class="op">Evita o atrito entre as peças</label>
                 <label for=""><input type="radio" name="op" id="op6" class="op">Faz o carro durar menos</label>
                 <label for=""><input type="radio" name="op" id="op7" class="op">Sujar o motor</label>
                 <label for=""><input type="radio" name="op" id="op8" class="op">Aumenta os riscos de acidente</label>
             </div>
             <div class="question" id="qst3">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_688010-MLB43170345109_082020-V.webp" alt="carburador" class="imagem">
-                <h2>E qual é o nome dessa peça?</h2>
+                <img src="https://http2.mlstatic.com/D_NQ_NP_688010-MLB43170345109_082020-V.webp" alt="carburador"
+                    class="imagem">
+                <h2 class="questionHeader">E qual é o nome dessa peça?</h2>
                 <label for=""><input type="radio" name="op" id="op9" class="op">Pistão</label>
                 <label for=""><input type="radio" name="op" id="op10" class="op">Termo interruptor do radiador</label>
                 <label for=""><input type="radio" name="op" id="op11" class="op">Carburador</label>
                 <label for=""><input type="radio" name="op" id="op12" class="op">Caixa de câmbio</label>
             </div>
             <div class="question" id="qst4">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_867472-MLB50417832594_062022-W.webp" alt="cilindro" class="imagem">
-                <h2>O que significa dizer que um carro tem um motor 4.0?</h2>
+                <img src="https://http2.mlstatic.com/D_NQ_NP_867472-MLB50417832594_062022-W.webp" alt="cilindro"
+                    class="imagem">
+                <h2 class="questionHeader">O que significa dizer que um carro tem um motor 4.0?</h2>
                 <label for=""><input type="radio" name="op" id="op13" class="op">Que é um carro pesado</label>
                 <label for=""><input type="radio" name="op" id="op14" class="op">Que é um carro devagar</label>
-                <label for=""><input type="radio" name="op" id="op15"class="op">Que a soma do volume dos cilindros resulta em 4.0</label>
-                <label for=""><input type="radio" name="op" id="op16"class="op">Que o carro tem 4 motores</label>
+                <label for=""><input type="radio" name="op" id="op15" class="op">Que a soma do volume dos cilindros
+                    resulta em 4.0</label>
+                <label for=""><input type="radio" name="op" id="op16" class="op">Que o carro tem 4 motores</label>
             </div>
             <div class="question" id="qst5">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_907017-MLB41949340344_052020-V.webp" alt="alternador" class="imagem">
-                <h2>Por último, qual a função dessa peça(Alternador)?</h2>
+                <img src="https://http2.mlstatic.com/D_NQ_NP_907017-MLB41949340344_052020-V.webp" alt="alternador"
+                    class="imagem">
+                <h2 class="questionHeader">Por último, qual a função dessa peça(Alternador)?</h2>
                 <label for=""><input type="radio" name="op" id="op17" class="op">Alternar a velocidade do carro</label>
                 <label for=""><input type="radio" name="op" id="op18" class="op">Permitir que carro dê ré</label>
                 <label for=""><input type="radio" name="op" id="op19" class="op">Carregar a bateria do carro</label>
-                <label for=""><input type="radio" name="op" id="op20" class="op">Acionar os Air bags em caso de impacto</label>
+                <label for=""><input type="radio" name="op" id="op20" class="op">Acionar os Air bags em caso de
+                    impacto</label>
 
             </div>
             <div id="resultado">
@@ -61,7 +70,7 @@
             <button type="submit" id="nxt">Próxima questão</button>
         </div>
     </div>
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
