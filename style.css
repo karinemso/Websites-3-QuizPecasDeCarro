@@ -15,8 +15,11 @@
     justify-content: center;
    
 }
-
-
+#resultado{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
 .imagem {
     width: 320px;
     height: 304px;

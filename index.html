@@ -14,10 +14,10 @@
             <div class="question" id="qst1">
                 <img src="https://http2.mlstatic.com/D_NQ_NP_667994-MLB41372754084_042020-V.webp" alt="vela de ignição" class="imagem">
                 <h2>Qual é o nome dessa peça de carro?</h2>
-                <label for=""><input type="radio" name="op" id="op1">Motor</label>
-                <label for=""><input type="radio" name="op" id="op2">Ponto de ignição</label>
-                <label for=""><input type="radio" name="op" id="op3">Alternador</label>
-                <label for=""><input type="radio" name="op" id="op4">Vela de ignição</label>
+                <label for=""><input type="radio" name="op" id="op1" class="op">Motor</label>
+                <label for=""><input type="radio" name="op" id="op2" class="op">Ponto de ignição</label>
+                <label for=""><input type="radio" name="op" id="op3" class="op">Alternador</label>
+                <label for=""><input type="radio" name="op" id="op4" class="op">Vela de ignição</label>
                 
                 
             </div>
@@ -54,7 +54,10 @@
                 <label for=""><input type="radio" name="op" id="op20" class="op">Acionar os Air bags em caso de impacto</label>
 
             </div>
-            <div id="resultado"></div>
+            <div id="resultado">
+                <span id="score"></span>
+                <button id="reiniciar">Reiniciar</button>
+            </div>
             <button type="submit" id="nxt">Próxima questão</button>
         </div>
     </div>

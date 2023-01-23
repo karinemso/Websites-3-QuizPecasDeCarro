@@ -6,12 +6,14 @@ let op11 = document.querySelector('#op11')
 let op15 = document.querySelector('#op15')
 let op19 = document.querySelector('#op19')
 const ops = document.querySelectorAll('.op')
+let btnRestart = document.querySelector('#reiniciar')
 let corrects = [op4,op5,op11,op15,op19]
 
 
 let currentIndex = 1
 let correct = 0
 
+btnNxt.disabled = true
 
 
 if(currentIndex == 1){
@@ -25,11 +27,27 @@ if(currentIndex == 1){
 function showQuestion(){
     questions[currentIndex].className = 'question active'
     currentIndex++
+    btnNxt.disabled = true
 }
 
+function buttonactive(){
+    btnNxt.disabled = false
+}
 function show(event){
     event.preventDefault()
-   
+    
+    console.log(ops)
+    let checked = 0
+
+    
+        ops.forEach(element => {
+            if (element.checked) {
+                checked++
+            }
+        });
+        if(checked == 0){
+            return console.log('Nenhuma opção selecionada')
+        }
 
     
 
@@ -37,6 +55,7 @@ function show(event){
         corrects.forEach(el=>{
             if(el.checked){
                 correct++
+                
             
             }
         })
@@ -55,6 +74,7 @@ function show(event){
     }
     else{
         let resultado = document.querySelector('#resultado')
+        let score = document.querySelector('#score')
         btnNxt.className = 'hidden'
         corrects.forEach(el=>{
             if(el.checked){
@@ -68,10 +88,19 @@ function show(event){
             el.className = 'question hidden'
 
     });
-        resultado.innerText = `Você acertou ${correct} de 5 questões`
+        resultado.style.display = 'flex'
+        score.innerText = `Você acertou ${correct} de 5 questões`
     }
 }
 
 
 
 btnNxt.addEventListener('click', show)
+
+ops.forEach(element => {
+    element.addEventListener('change', buttonactive)
+});
+
+btnRestart.addEventListener('click', ()=>{
+    location.reload()
+} )
